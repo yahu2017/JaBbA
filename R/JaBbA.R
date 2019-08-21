@@ -4830,7 +4830,7 @@ munlist = function(x, force.rbind = F, force.cbind = F, force.list = F)
 {
     param_lines = "CPLEX Parameter File Version 12.6.0.0"
 
-    param_lines = c(param_lines, paste("CPX_PARAM_THREADS", numthreads, sep = '\t'))
+    param_lines = c(param_lines, paste("CPXPARAM_Threads", numthreads, sep = '\t'))
 
     if (!is.na(nodefileind))
         param_lines = c(param_lines, paste("CPX_PARAM_NODEFILEIND", nodefileind, sep = '\t'))
